@@ -13,7 +13,7 @@
       <vaadin.extraJvmArgs>-Xmx512M -Xss2M</vaadin.extraJvmArgs>
       <vaadin.draftCompile>false</vaadin.draftCompile>
       <vaadin.style>OBF</vaadin.style>
-      <vaadin.version>7.5.7</vaadin.version>
+      <vaadin.version>8.3.1</vaadin.version>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
    </properties>
 
@@ -72,7 +72,7 @@
          <plugin>
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-maven-plugin</artifactId>
-            <version>7.6.1</version>
+            <version>${vaadin.version}</version>
             <configuration>
                <extraJvmArgs>${vaadin.extraJvmArgs}</extraJvmArgs><!--$NO-MVN-MAN-VER$ -->
                <webappDirectory>${project.build.directory}/classes/VAADIN/widgetsets</webappDirectory>

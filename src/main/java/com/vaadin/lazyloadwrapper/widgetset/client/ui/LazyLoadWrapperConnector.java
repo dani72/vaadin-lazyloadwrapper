@@ -1,9 +1,6 @@
 package com.vaadin.lazyloadwrapper.widgetset.client.ui;
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.dom.client.DivElement;
-import com.google.gwt.dom.client.Document;
-import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.user.client.DOM;
 import com.google.gwt.user.client.Timer;
@@ -182,8 +179,8 @@ public class LazyLoadWrapperConnector extends
     }
 
     private void clearChildCaption() {
-        if (captionNode.isOrHasChild(captionText)) {
-            captionNode.removeChild(captionText);
+        if( captionNode != null) {
+            captionNode.removeFromParent();
         }
     }
 
