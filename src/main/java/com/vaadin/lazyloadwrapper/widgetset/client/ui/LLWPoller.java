@@ -11,13 +11,12 @@ import com.google.gwt.user.client.Timer;
  */
 public class LLWPoller extends Timer {
 
-    ArrayList<LazyLoadWrapperConnector> listeners = new ArrayList<LazyLoadWrapperConnector>();
+    ArrayList<LazyLoadWrapperConnector> listeners = new ArrayList<>();
 
     @Override
     public void run() {
         // long start = System.currentTimeMillis();
-        for (LazyLoadWrapperConnector llw : new ArrayList<LazyLoadWrapperConnector>(
-                listeners)) {
+        for (LazyLoadWrapperConnector llw : new ArrayList<>( listeners)) {
             llw.checkVisibility();
         }
 

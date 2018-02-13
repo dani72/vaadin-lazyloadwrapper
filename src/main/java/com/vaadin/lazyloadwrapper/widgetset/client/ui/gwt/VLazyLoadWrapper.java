@@ -217,8 +217,7 @@ public class VLazyLoadWrapper extends SimplePanel {
      * 
      * @return true if visible, false otherwise
      */
-    protected boolean checkVerticalVisibility(int childTopY, int childBottomY,
-            int parentTopY, int parentBottomY) {
+    protected boolean checkVerticalVisibility(int childTopY, int childBottomY, int parentTopY, int parentBottomY) {
         if (childTopY < parentTopY && childBottomY > parentBottomY) {
             // Child is larger than parent visible area, but is currently
             // visible in parent.
